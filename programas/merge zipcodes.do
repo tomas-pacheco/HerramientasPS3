@@ -125,5 +125,4 @@ keep if _m==3
 drop _m
 
 save "$INPUT/clima_final.dta", replace
-
-
+export delimited using "MD_final", replace
