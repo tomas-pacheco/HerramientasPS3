@@ -1,4 +1,7 @@
-global INPUT "/Users/magibbons/Google Drive/Seminario de Tesis/clase 6 final"
+
+global main "/Users/tomaspacheco/Desktop/HerramientasPS3"
+global INPUT "$main/input"
+
 
 ** Datos zipcode
 edit
@@ -11,7 +14,7 @@ compress
 save "$INPUT/MD_zipcodes.dta", replace
 
 ** Datos crimen que bajamos de socrata
-import delimited "$INPUT/out/crime.csv",clear
+import delimited "$INPUT/crime.csv",clear
 keep if year==2015
 drop id crime_rate
 split name, p(,)
@@ -31,7 +34,6 @@ keep if _m==3
 gen ID=.
 replace ID=1	 if county=="Allegany"
 replace ID=2	 if county=="Anne Arundel"
-replace ID=24	 if county=="Baltimore City"
 replace ID=3	 if county=="Baltimore"
 replace ID=4	 if county=="Calvert"
 replace ID=5	 if county=="Caroline"
@@ -53,6 +55,8 @@ replace ID=20	 if county=="Talbot"
 replace ID=21	 if county=="Washington"
 replace ID=22	 if county=="Wicomico"
 replace ID=23	 if county=="Worcester"
+replace ID=24	 if county=="Baltimore City"
+
 
 gen incident=subinstr(incident_parent_type, " ", "",.)
 drop incident_parent_type
