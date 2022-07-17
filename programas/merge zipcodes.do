@@ -60,6 +60,7 @@ replace ID=24	 if county=="Baltimore City"
 
 gen incident=subinstr(incident_parent_type, " ", "",.)
 drop incident_parent_type
+drop if county == ""
 bys county year month incident: egen n_crime=sum(crime_count)
 drop name city
 bys county: egen zip_m=median(zipc)
