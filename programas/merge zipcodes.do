@@ -96,14 +96,14 @@ recode Assault BreakingnEntering Robbery Theft (.=0)
 save "$INPUT/MD_crime_2015_wide.dta"
 
 **
-cd "$INPUT/out/weather"
+cd "$INPUT/clima"
 local manyfiles : dir . files "*.csv"
 display `"`manyfiles'"'
 
 tempfile manydatasets
 
 foreach file of local manyfiles {
-	import delimited "$INPUT/out/weather/`file'", clear 
+	import delimited "$INPUT/clima/`file'", clear 
 	split date, p(-)
 	bys date_time2: egen prec_mean=mean(prec)
 	keep if date_time3=="01"
@@ -121,3 +121,13 @@ destring yyyy, gen(year)
 merge m:1 month year zip_m using "$INPUT/MD_crime_2015_wide.dta"
 keep if _m==3
 drop _m
+
+
+
+
+
+
+
+'20637','20653','20688','20735','20871','21040','21042','21158','21201','21220','21412','21502','21601','21638',' 21639','21643','21651','21703','21742','21801','21811','21853','21902'
+
+
