@@ -94,7 +94,8 @@ forv z=1/4 {
 }
 drop incident
 recode Assault BreakingnEntering Robbery Theft (.=0)
-save "$INPUT/MD_crime_2015_wide.dta"
+drop _merge
+save "$INPUT/MD_crime_2015_wide.dta", replace
 
 **
 cd "$INPUT/clima"
@@ -123,12 +124,6 @@ merge m:1 month year zip_m using "$INPUT/MD_crime_2015_wide.dta"
 keep if _m==3
 drop _m
 
-
-
-
-
-
-
-'20637','20653','20688','20735','20871','21040','21042','21158','21201','21220','21412','21502','21601','21638',' 21639','21643','21651','21703','21742','21801','21811','21853','21902'
+save "$INPUT/clima_final.dta", replace
 
 
