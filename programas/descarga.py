@@ -14,11 +14,11 @@ client = Socrata("odn.data.socrata.com", "VTGB0DNnS1HP1pKSPDRrwkU0A",
                  password= "EconUdesa2020+")
 
 
-results = client.get("tt5s-y5fc", limit=2000)
+results = client.get("tt5s-y5fc", limit=100000)
 
 
 results_df = pd.DataFrame.from_records(results)
-results_df.to_csv('crime.csv', header=True, index=False)
+results_df.to_csv('crime1.csv', header=True, index=False)
 
 
 
