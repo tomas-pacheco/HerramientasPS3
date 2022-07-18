@@ -11,12 +11,13 @@ En este repositorio se encuentra el archivo que contiene el informe del trabajo.
 * 'output': contiene archivos .shp que exportamos una vez construidas las bases de datos a partir de los datos originales ('precipitaciones.shp').
 * 'graficos':
   * 'estáticos': carpeta que contiene todos los gráficos estáticos realizados. Tienen los mismos nombres que son requeridos por el código de LaTeX para exportar el informe: 
-    * 'Precip_Assault_H2D.png': histograma 2D que muestra la relación entre los milímetros de precipitaciones y la cantidad de asaltos cada 100.000 habitantes
-    * 'Precip_Breakings.png': gráfico de dispersión que muestra la relación entre las precipitaciones y entraderas
-    * 'Precip_Robo_H2De.png': histograma 2D que muestra la relación entre precipitaciones y la cantidad de robos cada 100.000 habitantes por condado
-    * 'Precip_Theft.png': gráfico de dispersión que muestra la relación entre precipitaciones y hurtos
+    * 'Precip_Assault_H2D.png': histograma 2D que muestra la relación entre los milímetros de precipitaciones y la cantidad de asaltos cada 100.000 habitantes.
+    * 'Precip_Breakings.png': gráfico de dispersión que muestra la relación entre las precipitaciones y entraderas.
+    * 'Precip_Robo_H2De.png': histograma 2D que muestra la relación entre precipitaciones y la cantidad de robos cada 100.000 habitantes por condado.
+    * 'Precip_Theft.png': gráfico de dispersión que muestra la relación entre precipitaciones y hurtos.
+    * 'Maryland.png': mapa de Maryland que muestra la diferentes combinaciones entre cada cuartil de la cantidad de crímenes cada 100.000 habitantes y cada cuartil de cantidad de habitantes negros cada 100.000 habitantes.
   * 'dinamicos': carpeta que contiene todos los gráficos dinámicos realizados. Tienen los mismos nombres que son requeridos por el código de LaTeX para exportar el informe: 
-    * 'precipitaciones.gif' y 'precipitaciones.mp4'
-    * 'robos.gif' y 'robos.mp4'
+    * 'precipitaciones.gif' y 'precipitaciones.mp4'.
+    * 'robos.gif' y 'robos.mp4'.
 * 'latex': esta carpeta tiene el archivo .tex con el que se produce el informe. 
  
