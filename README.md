@@ -17,7 +17,7 @@ En este repositorio se encuentra el archivo que contiene el informe del trabajo.
     * 'Precip_Theft.png': gráfico de dispersión que muestra la relación entre precipitaciones y hurtos.
     * 'Maryland.png': mapa de Maryland que muestra la diferentes combinaciones entre cada cuartil de la cantidad de crímenes cada 100.000 habitantes y cada cuartil de cantidad de habitantes negros cada 100.000 habitantes.
   * 'dinamicos': carpeta que contiene todos los gráficos dinámicos realizados. Tienen los mismos nombres que son requeridos por el código de LaTeX para exportar el informe: 
-    * 'precipitaciones.gif' y 'precipitaciones.mp4'.
-    * 'robos.gif' y 'robos.mp4'.
+    * 'precipitaciones.gif' 
+    * 'robos.gif' 
 * 'latex': esta carpeta tiene el archivo .tex con el que se produce el informe. 
  
