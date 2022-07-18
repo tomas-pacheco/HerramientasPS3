@@ -124,5 +124,13 @@ merge m:1 month year zip_m using "$INPUT/MD_crime_2015_wide.dta"
 keep if _m==3
 drop _m
 
+
+tostring month, gen(month2)
+tostring ID, gen(ID2)
+gen objectidmes = ID2 + "-" +  month2
+drop month2 ID2
+
 save "$INPUT/clima_final.dta", replace
-export delimited using "MD_final", replace
+
+keep zip_m county prec_mean n_crime Assault BreakingnEntering Robbery Theft objectidmes
+export delimited using "$INPUT/MD_final", replace
