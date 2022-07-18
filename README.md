@@ -8,8 +8,9 @@ En este repositorio se encuentra el archivo que contiene el informe del trabajo.
   * 'MD_final.csv': este es un archivo que contiene todos los datos de clima. 
   * 'crime.csv': este es un archivo que contiene datos sobre crimen. 
   * 'Maryland_Counties.shp': es un archivo que contiene los datos de los counties de Maryland. 
-* 'output': contiene archivos .shp que exportamos una vez construidas las bases de datos a partir de los datos originales ('precipitaciones.shp'), dos archivos '.gif' correspondientes a los gráficos dinámicos y tres carpetas con las diferentes figuras realizadas en el trabajo: 
-  * 'graficos': contiene cuatro gráficos estáticos
-  * 'dinamico1': contiene las imágenes del primer gráfico dinámico. 
-  * 'dinamico2': contiene las imágenes del segundo gráfico dinámico. 
+* 'output': contiene archivos .shp que exportamos una vez construidas las bases de datos a partir de los datos originales ('precipitaciones.shp').
+* 'graficos':
+  * 'estáticos': carpeta que contiene todos los gráficos estáticos realizados. Tienen los mismos nombres que son requeridos por el código de LaTeX para exportar el informe: 
+    * a
+* 'latex': esta carpeta tiene el archivo .tex con el que se produce el informe. 
  
